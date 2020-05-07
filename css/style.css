@@ -1,0 +1,68 @@
+/* Corpo pagina */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
+  background-image: url("../img/sfondo.jpg");
+  background-size: cover;
+}
+
+.containertotal {
+  width: 1000px;
+  border: 2px inset;
+  border-radius: 8px;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #121c21;
+}
+
+#container1, #container2 {
+  margin: 20px;
+}
+
+/* Lista oggetti */
+
+.object {
+  width: 300px;
+  position: relative;
+  display: inline-block;
+  margin: 2px;
+}
+
+.object > .sconto {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.sconto.rosso {
+  background-color: red;
+}
+
+.sconto.verde {
+  background-color: green;
+}
+
+.cuore {
+  width: 100%;
+  font-size: 50px;
+  position: absolute;
+  bottom: 5px;
+  color: #121c21;
+  display: none;
+}
+
+.object:hover .cuore {
+  display: block;
+}
