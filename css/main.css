@@ -1,0 +1,64 @@
+/* Corpo pagina */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.containertotal {
+  width: 1000px;
+  border: 2px inset;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  background-color: white;
+}
+
+#container1, #container2 {
+  margin-top: 5px;
+}
+
+/* Lista oggetti */
+
+.object {
+  width: 300px;
+  position: relative;
+  display: inline-block;
+  margin: 2px;
+}
+
+.object > .sconto {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.sconto.rosso {
+  background-color: red;
+}
+
+.sconto.verde {
+  background-color: green;
+}
+
+.cuore {
+  width: 100%;
+  font-size: 50px;
+  position: absolute;
+  bottom: 5px;
+  color: brown;
+  display: none;
+}
+
+.object:hover .cuore {
+  display: block;
+}
