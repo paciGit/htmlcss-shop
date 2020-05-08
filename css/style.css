@@ -29,7 +29,6 @@ body {
 /* Lista oggetti */
 
 .object {
-  width: 300px;
   position: relative;
   display: inline-block;
   margin: 2px;
